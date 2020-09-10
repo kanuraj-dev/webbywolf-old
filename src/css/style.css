@@ -96,7 +96,7 @@ html {
       -webkit-transform: translateX(-100%);
               transform: translateX(-100%);
       position: fixed;
-      top: 0px;
+      top: 15px;
       bottom: 0;
       margin: auto;
       left: 0;
