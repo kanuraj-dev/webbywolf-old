@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+    font-family: 'Red Hat Display';
+}
+html {
+    scroll-behavior: smooth;
+}
+.no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.border-rounded {
+    border-radius: 20px !important;
+}
+.better-text {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+/* blog */
+.need-of-website-blog p {
+    font-size: 20px !important;
+}
+.need-of-website-blog h2 {
+    font-weight: 600 !important;
+    font-size: 2.5rem !important;
+}
+/* blog */
+
+/* home page */
+.home-page .top-header{
+    background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+    min-height:100%;
+    padding-bottom: 50px !important;
+    border-bottom-right-radius: 110vh 100px ;
+    border-bottom-left-radius: 110vh 100px ;
+}
+.home-page .intro-text h1 {
+    font-weight: 900;
+    font-family: 'Red Hat Display',sans-serif;
+}
+.home-page .intro-form h2 {
+    font-weight: 600;
+    font-family: 'Red Hat Display',sans-serif;
+}
+.home-page .intro-form a {
+    font-weight: 600;
+    font-family: 'Red Hat Display',sans-serif;
+}
+.home-page .intro-text p {
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: 'Red Hat Display';
+}
+/* home page */
+
+
+/* Top Features */
+.top-features .feature-card {
+    max-height: 480px;
+}
+/* Top Features */
+
+
+
+/* actions */
+.actions p {
+    font-weight: 500;
+}
+.actions a {
+    font-weight: 600;
+}
+/* actions */
+
+
+/* For Mobile */
+@media (max-width: 450px) {
+    /* home page */
+    .home-page .intro-text h1 {
+        font-size: 2rem;
+    }
+    .home-page .intro-text p {
+        font-size: 0.8rem;
+    }
+    /* home page */
+}
+
+
+@media (max-width: 992px) {
+    .mobileMenu {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      position: fixed;
+      top: 0px;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      width: 250px;
+      -webkit-transition: all ease 0.25s;
+      transition: all ease 0.25s;
+    }
+    .mobileMenu.open {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+    .mobileMenu .navbar-nav {
+      overflow-y: auto;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+    }
+    .overlay.open {
+      display: block;
+      z-index: 1029;
+    }
+    /* blog */
+    .need-of-website-blog p {
+        font-size: 18px !important;
+    }
+    .need-of-website-blog h2 {
+        font-size: 1.8rem !important;
+    }
+    /* blog */
+  }
+  /*# sourceMappingURL=style.css.map */
+
+
+
+  
+/* When navbar expands */
+@media screen and (min-width: 995px){
+    .navbar .nav-link {
+        border-radius: 0 !important;
+    }
+    .navbar .active .nav-link{
+        background: none !important;
+        border-radius: 0 !important;
+    }
+    .nav-link:hover {
+        opacity: 1;
+      }
+    .navbar .active .nav-link::before{
+        transition: 300ms;
+        height: 3px;
+        border-radius: 5px;
+        transform: scaleX(1);
+        content: "";
+        position: absolute;
+        background-color: #d1d646;
+    }
+    .nav-link::before {
+        transition: 300ms;
+        height: 3px;
+        width: 65%;
+        transform: scaleX(0);
+        transform-origin: bottom left;
+        border-radius: 5px;
+        content: "";
+        position: absolute;
+        background-color: #d1d646;
+    }
+      
+    .nav-link::before {
+        bottom: 0px;
+    }
+      
+    .nav-link:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom right;
+    }
+
+}
