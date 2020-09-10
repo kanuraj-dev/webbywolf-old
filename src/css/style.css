@@ -20,6 +20,9 @@ html {
     letter-spacing: 1px;
     word-spacing: 2px;
 }
+.bold-heading {
+    font-weight: 900 !important;
+}
 
 /* blog */
 .need-of-website-blog p {
@@ -93,8 +96,8 @@ html {
 
 @media (max-width: 992px) {
     .mobileMenu {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
+      -webkit-transform: translateX(-101%);
+              transform: translateX(-101%);
       position: fixed;
       top: 15px;
       bottom: 0;
